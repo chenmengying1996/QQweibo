@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		
+		body {
+			background: url(img/wrapBg.jpg) no-repeat;
+		}
+		
+		.logo {
+			margin-top: 30px;
+			margin-left: 300px;
+		}
+		
+		.center {
+			width: 800px;
+			height: 200px;
+			border: 1px solid #000;
+			margin: 0 auto;
+			background-color: #fff;
+		}
+		
+		#talkBox {
+			text-align: left;
+			margin: 0 0 0 25px;
+		}
+		.bdLeft {
+			height: 100%;
+			width: 590px;
+			float: left;
+		}
+		
+		.bdLeft h3 {
+			/*利用行高可以撑开*/
+			font: normal 18px/29px "微软雅黑";
+		}
+		
+		
+		.bdLeft textarea {
+			width: 540px;
+			height: 80px;
+			
+			border: 1px solid #000000;
+			padding: 2px;
+		}
+		
+		.bdright {
+			width: 185px;
+			height: 100%;
+			float: right;
+			background-color:#ccebf4;
+		}
+		
+		#funBox {
+			width: 540px;
+			
+		}
+		
+		#funBox a {
+			text-decoration: none;
+			color: #000000;
+			margin-right: 10px;
+			font-size: 14px;
+			font-family: "微软雅黑";
+		}
+		
+		#sendBox input{
+			width: 112px;
+			height: 30px;
+			float: right;
+			margin: 0 20px 0 0;
+			
+			background: url(img/bg1.png) -117px -165px no-repeat;
+			border: 0px;
+			cursor: pointer;
+		}
+		
+		
+		.countTxt {
+			float: right;
+			line-height: 33px;
+			margin: 0 15px 0 0;
+			color: #999;
+		}
+		
+		.countTxt em {
+			font-family: tahoma;
+			font-size: 26px;
+			
+		}
+		
+		.insertFace {
+			position: relative;
+		}
+		.faceDiv {
+			position: absolute;
+			left: 10px;
+			width: 200px;
+			height: 360px;
+			border: 1px solid #999999;
+		}
+		
+		.atSome {
+			position: relative;
+		}
+		
+		.friendDiv {
+			position: absolute;
+			left: 2px;
+			width: 50px;
+			height: 100px;
+			border: 1px solid #ccc;
+			background-color:gainsboro;
+		}
+		
+		
+		.friendDiv ul{
+			list-style: none;
+		}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.8.2.js" ></script>
+		<script type="text/javascript" src="js/weibo.js"></script>
+	</head>
+	<body>
+		<img class="logo" src="img/b3_100901.png"/>
+		<div class="center">
+			<div id="talkBox">
+				<div class="bdLeft">
+					<h3>冬天来了，你懂得...</h3>
+					<textarea id="mesTxt"></textarea>
+						<div id="funBox">
+							<a href="javascript:void(0);" class="creatNew">话题</a>   
+                    		<a href="javascript:void(0);" class="atSome">朋友</a> 
+                    		<a href="javascript:void(0);" class="insertFace">表情</a>
+                    		<a href="javascript:void(0);" class="uploadPic">照片</a>
+                    		<a href="javascript:void(0);" class="uploadVideo">视频</a>
+						</div>
+						<div id="sendBox">
+							<input type="button"/>
+							<span class="countTxt">还能输入<em>140</em>个字</span>
+						</div>
+				</div>
+			</div>
+				<div class="bdright"></div>
+		</div>
+	</body>
+</html>
